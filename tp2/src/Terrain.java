@@ -10,12 +10,12 @@ public class Terrain {
 public static int SPACE=Jeu.PAS_QUADRILLAGE ;
 public static int hauteur=(int)Jeu.HEIGHT;
 public static int largeur=(int)Jeu.WIDTH;
-public static String level1= "C:\\Users\\thibault\\workspace2\\tp2\\level1.txt";
-public static String level2= "C:\\Users\\thibault\\workspace2\\tp2\\level2.txt";
-public static String level3= "C:\\Users\\thibault\\workspace2\\tp2\\level3.txt";
-public static String level4= "C:\\Users\\thibault\\workspace2\\tp2\\level4.txt";
-public static String level5= "C:\\Users\\thibault\\workspace2\\tp2\\level5.txt";
-public static String level6= "C:\\Users\\thibault\\workspace2\\tp2\\level6.txt";
+public static String level1= "level1.txt";
+public static String level2= "level2.txt";
+public static String level3= "level3.txt";
+public static String level4= "level4.txt";
+public static String level5= "level5.txt";
+public static String level6= "level6.txt";
 String map="";
 int [][] terrain= new int[largeur+2][hauteur+2];
 	Terrain(){
