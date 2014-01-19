@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
+//class pour creer des maps et le fichier text associé
 public class Edit {
 	public static final int PAS_QUADRILLAGE=25;
 	public static final int WIDTH=1000;
@@ -29,11 +30,6 @@ public class Edit {
 		StdDraw.picture(WIDTH/2, HEIGHT/2,name1 );
 		panel=convertTxtToTab(name1);
 		erireTxt();
-			/*
-		while(StdDraw.isKeyPressed(KeyEvent.VK_ENTER)==false){
-			buildTerrain(name);
-		}
-		erireTxt();*/
 	}
 	public Edit(String name){
 		StdDraw.setXscale(0, WIDTH );            
@@ -73,6 +69,9 @@ public class Edit {
 		return tab;
 	}
 
+	/*
+	 * placer les éléments sur la carte
+	 */
 	public static void buildTerrain(String name){
 
 			if (StdDraw.isKeyPressed(KeyEvent.VK_SPACE)==true){
@@ -129,8 +128,7 @@ public class Edit {
 			}	
 			System.out.println(panel[2][WIDTH-1]);
 	}
-	
-	
+
 	
 	public static void placerHerbe(){
 		for (int i=0;i<=HEIGHT;i+=3*PAS_QUADRILLAGE){
